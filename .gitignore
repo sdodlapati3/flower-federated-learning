@@ -26,6 +26,9 @@ venv/
 env/
 .venv/
 
+# Archive (learning history, logs)
+archive/
+
 # IDE
 .idea/
 .vscode/

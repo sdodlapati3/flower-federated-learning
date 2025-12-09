@@ -157,12 +157,16 @@ flower-federated-learning/
 │       ├── checkpointing.py  # Model checkpoints
 │       └── reproducibility.py # Seeds, device detection
 ├── tests/                     # Test suite (61 tests)
-├── dp-experiments/            # DP experiment scripts
-├── week5-6-scaling/           # Advanced FL experiments
-│   └── experiments/
-│       ├── scaffold/          # SCAFFOLD vs FedAvg
-│       └── fedprox/           # FedProx experiments
-└── flower-tutorial/           # Basic Flower tutorial
+├── examples/                  # Example experiments
+│   ├── dp/                   # Differential privacy experiments
+│   ├── scaffold/             # SCAFFOLD vs FedAvg comparison
+│   ├── fedprox/              # FedProx experiments
+│   ├── flower-basics/        # Basic Flower tutorial
+│   ├── quickstarts/          # Framework quickstarts (JAX, TF, etc.)
+│   └── advanced/             # Advanced FL examples
+├── README.md
+├── pyproject.toml
+└── requirements.txt
 ```
 
 ## 📊 Experiments
@@ -170,7 +174,7 @@ flower-federated-learning/
 ### Differential Privacy Experiments
 
 ```bash
-cd dp-experiments
+cd examples/dp
 python run_standalone_experiments_refactored.py
 ```
 
@@ -179,7 +183,7 @@ Compares IID vs Non-IID data with varying privacy levels (ε = 2, 4, 8).
 ### SCAFFOLD vs FedAvg
 
 ```bash
-cd week5-6-scaling/experiments/scaffold
+cd examples/scaffold
 python scaffold_implementation_refactored.py
 ```
 
@@ -188,7 +192,7 @@ Demonstrates variance reduction with control variates on heterogeneous data.
 ### FedProx Comparison
 
 ```bash
-cd week5-6-scaling/experiments/fedprox
+cd examples/fedprox
 python fedprox_implementation_refactored.py
 ```
 
